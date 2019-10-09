@@ -11,14 +11,14 @@
         app:labelVisibilityMode="selected"
         app:showAsAction="ifRoom|withText" />
 
-    <item
+    <!--<item
         android:id="@+id/action_services"
         android:enabled="true"
         android:fontFamily="@font/helvetica"
         android:icon="@drawable/ic_serviceperson_deselect"
         android:title="@string/service_expert"
         app:labelVisibilityMode="selected"
-        app:showAsAction="ifRoom|withText" />
+        app:showAsAction="ifRoom|withText" />-->
 
     <item
         android:id="@+id/action_profile"

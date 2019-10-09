@@ -229,9 +229,11 @@
 
     <!--Assigned Services-->
     <string name="assigned_title">Assigned Services</string>
+    <string name="initiate">Initiate</string>
 
     <!--OnGoing Services-->
     <string name="ongoing_title">Ongoing Services</string>
+    <string name="next">Next</string>
 
     <!--Completed Services-->
     <string name="completed_title">Completed Services</string>

@@ -1,5 +1,6 @@
 package com.hst.vendor.activity.fragmentactivity.ongoing;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
@@ -21,6 +22,7 @@ import com.hst.vendor.R;
 import com.hst.vendor.bean.support.OngoingService;
 import com.hst.vendor.helper.AlertDialogHelper;
 import com.hst.vendor.helper.ProgressDialogHelper;
+import com.hst.vendor.utils.CommonUtils;
 import com.hst.vendor.utils.PreferenceStorage;
 import com.hst.vendor.utils.SkilExConstants;
 
@@ -91,7 +93,19 @@ public class InitiatedServiceActivity extends BaseActivity implements IServiceLi
 
     @Override
     public void onClick(View v) {
+        if (CommonUtils.haveNetworkConnection(getApplicationContext())) {
+            if (v == imgCall) {
 
+            } else if (v == btnTrack) {
+                Intent i = new Intent(getApplicationContext(), ServiceProcessActivity.class);
+                i.putExtra("serviceObj", ongoingService);
+                startActivity(i);
+                finish();
+            }
+
+        } else {
+            AlertDialogHelper.showSimpleAlertDialog(this, "No Network connection available");
+        }
     }
 
     @Override

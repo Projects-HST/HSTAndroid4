@@ -100,6 +100,7 @@ public class AssignedServicesActivity extends BaseActivity implements IServiceLi
         Intent intent = new Intent(this, AssignedServiceDetailActivity.class);
         intent.putExtra("serviceObj", service);
         startActivity(intent);
+        finish();
     }
 
     @Override

@@ -38,7 +38,7 @@ public class AssignedServiceDetailActivity extends BaseActivity implements IServ
     private TextView catName, subCatName, custName, serviceDate, serviceTimeSlot, orderID, custNumber, custAddress,
             estimatedCost, serviceLocation, serviceNumber, serviceExpert;
     private TextView cusName, cusNumber, serviceTime, estimateAmount;
-    Button btnCancel;
+    Button btnCancel, btnInitiate;
     String res = "";
     String expertId = "";
 
@@ -78,6 +78,8 @@ public class AssignedServiceDetailActivity extends BaseActivity implements IServ
         estimateAmount = findViewById(R.id.txt_estimated_cost);
         btnCancel = findViewById(R.id.btnCancel);
         btnCancel.setOnClickListener(this);
+        btnInitiate = findViewById(R.id.btnInitiate);
+        btnInitiate.setOnClickListener(this);
 
     }
 
@@ -119,6 +121,8 @@ public class AssignedServiceDetailActivity extends BaseActivity implements IServ
                     }
                 });
                 alertDialogBuilder.show();
+            } else if (v == btnInitiate) {
+                initiateService();
             }
         } else {
             AlertDialogHelper.showSimpleAlertDialog(this, "No Network connection available");
@@ -130,6 +134,24 @@ public class AssignedServiceDetailActivity extends BaseActivity implements IServ
         intent.putExtra("serviceOrderId", assignedService.getServiceOrderId());
         startActivity(intent);
         finish();
+    }
+
+    private void initiateService() {
+        res = "initiateService";
+        JSONObject jsonObject = new JSONObject();
+        String id = "";
+        id = PreferenceStorage.getUserMasterId(this);
+        try {
+            jsonObject.put(SkilExConstants.USER_MASTER_ID, id);
+            jsonObject.put(SkilExConstants.SERVICE_ORDER_ID, assignedService.getServiceOrderId());
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+//        progressDialogHelper.showProgressDialog(getString(R.string.progress_loading));
+        String url = SkilExConstants.BUILD_URL + SkilExConstants.API_INITIATE_SERVICE;
+        serviceHelper.makeGetServiceCall(jsonObject.toString(), url);
     }
 
     @Override
@@ -182,6 +204,9 @@ public class AssignedServiceDetailActivity extends BaseActivity implements IServ
                     cusNumber.setText(getServiceData.getString("contact_person_number"));
                     serviceTime.setText(getServiceData.getString("from_time"));
                     estimateAmount.setText(getServiceData.getString("service_rate_card"));
+                } else if (res.equalsIgnoreCase("initiateService")) {
+                    finish();
+
                 }
 
             } catch (JSONException e) {

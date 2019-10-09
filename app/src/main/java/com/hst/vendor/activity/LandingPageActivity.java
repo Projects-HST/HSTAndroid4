@@ -69,10 +69,10 @@ public class LandingPageActivity extends BaseActivity implements DialogClickList
 //                                fabView.setVisibility(View.VISIBLE);
                                 break;
 
-                            case R.id.action_services:
+                            /*case R.id.action_services:
                                 changeFragment(1);
 //                                fabView.setVisibility(View.VISIBLE);
-                                break;
+                                break;*/
                             case R.id.action_profile:
                                 changeFragment(2);
 //                                fabView.setVisibility(View.VISIBLE);
@@ -144,13 +144,13 @@ public class LandingPageActivity extends BaseActivity implements DialogClickList
 
         Fragment newFragment = null;
 
-        if (position == 1) {
-            checkPointSearch = 1;
-            newFragment = new ServiceExpertFragment();
-        } else if (position == 0) {
+        if (position == 0) {
             checkPointSearch = 0;
             newFragment = new HomeFragment();
-        } else if (position == 2) {
+        } /*else if (position == 1) {
+            checkPointSearch = 1;
+            newFragment = new ServiceExpertFragment();
+        }*/ else if (position == 2) {
             checkPointSearch = 2;
             newFragment = new ProfileFragment();
         }

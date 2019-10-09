@@ -147,7 +147,10 @@ public class RequestedServiceDetailActivity extends BaseActivity implements ISer
 
                     spnExpertDropDown.setEnabled(true);
                     btnAssign.setEnabled(true);
-                    loadServicePerson();
+//                    loadServicePerson();
+                    Intent intent = new Intent(this, LandingPageActivity.class);
+                    startActivity(intent);
+                    finish();
 
                 } else if (res.equalsIgnoreCase("assign")) {
                     Intent intent = new Intent(this, LandingPageActivity.class);

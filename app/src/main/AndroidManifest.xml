@@ -188,6 +188,20 @@
             android:windowSoftInputMode="stateHidden" />
 
         <activity
+            android:name="com.hst.vendor.activity.fragmentactivity.ongoing.OngoingServiceDetailActivity"
+            android:label="@string/ongoing_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
+            android:name="com.hst.vendor.activity.fragmentactivity.ongoing.ServiceProcessActivity"
+            android:label="@string/ongoing_title"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <activity
             android:name="com.hst.vendor.activity.fragmentactivity.completed.CompletedServicesActivity"
             android:label="@string/completed_title"
             android:screenOrientation="portrait"

@@ -262,7 +262,6 @@
                     android:layout_height="100dp"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
-                    android:enabled="false"
                     android:hint="@string/material_used" />
 
                 <TextView
@@ -272,7 +271,6 @@
                     android:layout_gravity="end"
                     android:drawableStart="@drawable/ic_attachment_blue"
                     android:text="@string/attach_bill"
-                    android:visibility="gone"
                     android:textColor="@color/blue"
                     android:textSize="14dp" />
 
@@ -299,7 +297,6 @@
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
                     android:text="@string/update"
-                    android:visibility="gone"
                     android:textAllCaps="false"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
@@ -315,7 +312,7 @@
                     android:background="@drawable/button_round_color"
                     android:paddingStart="20dp"
                     android:paddingEnd="20dp"
-                    android:text="@string/close"
+                    android:text="@string/submit"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textStyle="bold" />

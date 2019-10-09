@@ -126,6 +126,13 @@ public class SkilExConstants {
     public static final String API_ASSIGN_SERVICE_ORDER = "assigned_accepted_services/";
     public static final String API_ASSIGNED_SERVICE_DETAILS = "detail_assigned_services/";
 
+    //Initiate service
+    public static final String API_INITIATE_SERVICE = "initiate_services/";
+//    public static String SERVICE_ORDER_ID = "service_order_id";
+    public static String SERVICE_OTP = "service_otp";
+//    public static String KEY_MATERIAL_NOTES = "material_notes";
+//    public static final String KEY_USER_TYPE = "user_type";
+
     //Cancel service
     public static final String API_CANCEL_REASON = "cancel_service_reasons/";
     public static final String API_CANCEL_SERVICE = "cancel_services/";
@@ -141,6 +148,9 @@ public class SkilExConstants {
     public static final String API_ONGOING_SERVICE_DETAIL_UPDATE = "update_ongoing_services/";
     public static final String API_ONGOING_SERVICE_COMPLETE = "complete_services/";
     public static final String UPLOAD_BILL_DOCUMENT = "upload_service_bills/";
+    public static final String API_SERVICE_PROCESS = "service_process/";
+    public static final String API_REQUEST_OTP = "request_otp/";
+    public static final String API_START_SERVICE = "start_services/";
 
     //Completed service
     public static final String API_COMPLETED_SERVICE_LIST = "list_completed_services/";

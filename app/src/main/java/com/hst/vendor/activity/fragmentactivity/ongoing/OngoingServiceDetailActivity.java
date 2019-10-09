@@ -386,12 +386,11 @@ public class OngoingServiceDetailActivity extends BaseActivity implements IServi
     public void onClick(View v) {
         if (CommonUtils.haveNetworkConnection(getApplicationContext())) {
             if (v == txtAttachBill) {
-//                showFileChooser();
+                showFileChooser();
             } else if (v == btnUpdate) {
-//                updateService();
+                updateService();
             } else if (v == btnSubmit) {
-//                completeService();
-                finish();
+                completeService();
             }
 
         } else {
