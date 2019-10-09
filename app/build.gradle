@@ -4,7 +4,7 @@ android {
 
     signingConfigs {
         config {
-            keyAlias 'hat_vendor_alias'
+            keyAlias 'hst_vendor_alias'
             keyPassword 'vendor#123'
             storeFile file('D:\\HappySanzTech\\AppWorkSpace\\HSTVendor\\app\\hst_vendor.jks')
             storePassword 'vendor#123'
