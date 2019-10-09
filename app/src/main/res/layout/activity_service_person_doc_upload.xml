@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/service_person_doc_upload"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingEnd="1dp"
+                android:text="@string/id_selection_title"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+            <Spinner
+                android:id="@+id/spnIdProofType1"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:overlapAnchor="false"
+                android:paddingStart="12dp"
+                android:paddingEnd="10dp"
+                android:prompt="@string/term"
+                android:saveEnabled="false" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtProof1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/rounded_edge_trans_bg_with_border"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/id_proof_number"
+                    android:maxLength="20"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="1dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/txtUploadProof1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/ic_uploading"
+                    android:gravity="center"
+                    android:text="@string/upload"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/spnIdProofType2"
+                style="@style/spinner_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="5dp"
+                android:overlapAnchor="false"
+                android:paddingStart="12dp"
+                android:paddingEnd="10dp"
+                android:prompt="@string/term" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtProof2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/rounded_edge_trans_bg_with_border"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/id_proof_number"
+                    android:maxLength="20"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="1dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/txtUploadProof2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="@color/transparent"
+                    android:drawableTop="@drawable/ic_uploading"
+                    android:gravity="center"
+                    android:text="@string/upload"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_round_color"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:text="@string/reg_submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

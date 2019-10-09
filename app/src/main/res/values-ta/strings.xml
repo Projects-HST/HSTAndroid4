@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ஸ்கில்எக்ஸ்</string>
+
+    <string name="empty" />
+    <string name="error_occurred">Failed to connect to the server. Please try again.</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+
+    <!--Login-->
+    <string name="welcome">Welcome!</string>
+    <string name="enter_text">Enter Mobile Number</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+
+    <!--Register-->
+    <string name="reg_name">Name *</string>
+    <string name="reg_name_hint">John</string>
+    <string name="reg_mob_no">Phone Number *</string>
+    <string name="reg_mob_no_hint">0123456789</string>
+    <string name="reg_mail_id">Email ID (Optional)</string>
+    <string name="reg_mail_id_hint">info@demo.com</string>
+    <string name="reg_submit">Submit</string>
+    <string name="reg_action_bar">Registration</string>
+    <string name="reg_name_error">Enter valid name</string>
+    <string name="reg_phone_error">Enter valid phone number</string>
+
+    <!--OTP Page-->
+
+    <string name="verificationcode">Verification Code</string>
+    <string name="didntrecievecode">Didn\'t receive the code?\t</string>
+    <string name="entercodetxt">We have sent you 4 digit verification code to\nyour mobile number</string>
+    <string name="resend">Resend now</string>
+    <string name="resend_otp">Resend OTP?</string>
+    <string name="changenumber">Change number</string>
+    <string name="otp_action_bar">OTP</string>
+
+    <!--Category Selection-->
+
+    <string name="category_action_bar">Select Category</string>
+    <string name="go_next">Next</string>
+
+    <!--Organization Selection-->
+    <string name="org_type_action_bar">Select Organization</string>
+    <string name="org_info">*How would you like to identify yourself?</string>
+    <string name="reg_org">A registered organization</string>
+    <string name="un_org">An individual / an unregistered organization</string>
+
+    <!--Registered Organization-->
+    <string name="reg_org_action_bar">Organization details</string>
+    <string name="reg_org_title">Tell us about your business</string>
+    <string name="reg_org_company_name">Enter your registered company name</string>
+    <string name="reg_org_no_of_people">How many people work for you?</string>
+    <string name="reg_org_address_1">Enter your business address (line 1)</string>
+    <string name="reg_org_address_2">Enter your business address (line 2)</string>
+    <string name="reg_org_city">Enter city</string>
+    <string name="reg_org_postal">Enter postal code</string>
+    <string name="reg_org_state">Enter state</string>
+    <string name="reg_org_building_own">Own</string>
+    <string name="reg_org_building_rental">Tenancy</string>
+    <string name="reg_org_building_title">Details of office premises</string>
+
+    <!--Registered organization document upload-->
+    <string name="reg_doc_upload_action_bar">Documentation</string>
+    <string name="reg_doc_upload_title">Documentation of Service Organization</string>
+    <string name="org_rc">RC Certificate Number</string>
+    <string name="org_rc_hint">Enter RC Certificate Number</string>
+    <string name="org_gst">GST Certificate Number</string>
+    <string name="org_gst_hint">Enter GST Number</string>
+    <string name="org_pan">Organization PAN Number</string>
+    <string name="org_pan_hint">Enter PAN Number</string>
+    <string name="org_authority">Are you going to be a signing authority</string>
+
+
+    <!--Un Registered Organization-->
+    <string name="un_reg_org_action_bar">Enter individual details</string>
+    <string name="individual_title">Individual details</string>
+    <string name="check_box_1">Are you an individual service expert?</string>
+    <string name="check_box_2">Someone who also coordinates other experts?</string>
+    <string name="un_reg_emp_count_box">What is the strength of your team?</string>
+    <string name="check_also_expert">Will you be leading your team in the project you undertake?</string>
+    <string name="expert_yes">Yes</string>
+    <string name="expert_no">No</string>
+
+    <!--Un Reg Org Document Upload-->
+    <string name="un_reg_doc_upload_action_bar">Documentation</string>
+    <string name="un_reg_doc_upload">Documentation of Individual Service Expert</string>
+    <string name="pan_card_title">PAN Card Number</string>
+    <string name="upload">Upload</string>
+    <string name="id_selection_title">ID Proof and Address Proof</string>
+    <string name="id_address_title">Address proof of your office</string>
+    <string name="id_selection_type">Select the ID proof you want to submit</string>
+    <string name="id_proof_number">Enter your proof number</string>
+    <string name="bank_details_title">Bank Account Details</string>
+    <string name="bank_name">Enter the bank name</string>
+    <string name="bank_acc_no">Enter bank account number</string>
+    <string name="bank_ifsc">Enter bank IFSC number</string>
+    <string name="bank_branch">Enter bank branch name</string>
+    <string name="bank_pass_book">Kindly scan and upload your passbook\'s \nfront page</string>
+    <string name="term"><u>Term of Agreement</u></string>
+
+    <!--Initial deposit-->
+    <string name="initial_deposit_action_bar">Deposit</string>
+    <string name="deposit_title">Refundable Deposit</string>
+    <string name="pay">Pay</string>
+    <string name="deposit_description">* The amount you deposit will be refunded when you end your agreement with SkilEx or when you manage to have a good service record via SkilEx.</string>
+    <string name="advance_redirect_url">http://skilex.in/development/ccavenue_app/serv_provider_advnace.php</string>
+<!--    <string name="advance_redirect_url">http://skilex.in/development/ccavenue_app/serv_provider_advnace.php</string>-->
+<!--    <string name="advance_redirect_url">http://skilex.in/ccavenue_app/serv_provider_advnace.php</string>-->
+    <!--    <string name="advance_redirect_url">https://test.ccavenue.com/transaction/initTrans</string>-->
+    <string name="redirect_page">Please wait your are redirecting to \nthe payment page&#8230;</string>
+
+    <!--Uploaded document verify status-->
+    <string name="upload_doc_verify_display_title">Document Verification</string>
+    <string name="success">Success</string>
+    <string name="success_desc">Your document is verified successfully.\nYou can now Proceed\n to get started.</string>
+    <string name="upload_doc_verify_pending_status">Pending</string>
+    <string name="pending_desc">Your document is under verification process.\nKindly be patient\n to get start.</string>
+    <string name="close">Close</string>
+
+    <!--Document verify display-->
+    <string name="doc_verify_display_title">Document Verification</string>
+    <string name="welcome_desc">To the platform where expertise is served\nwith convenience</string>
+    <string name="get_start">Get Started</string>
+
+
+    <!--Daily transaction payment-->
+    <string name="payment_redirect_url">http://skilex.in/development/ccavenue_app/serv_provider_payment.php</string>
+
+    <!--Payment module-->
+    <string name="advance_amount">Advance Amount</string>
+    <string name="access_code">Access Code</string>
+    <string name="merchant_id">Merchant Id</string>
+    <string name="currency">Currency</string>
+    <string name="amount">Amount</string>
+    <string name="redirect_url">Redirect Url</string>
+    <string name="cancel_url">Cancel Url</string>
+    <string name="rsa_url">RSA Key Url</string>
+    <string name="payment_success">Awesome!</string>
+    <string name="payment_failed">Something\'s wrong!</string>
+    <string name="payment_success_comment">Your payment transaction \ncompleted successfully</string>
+    <string name="payment_failed_comment">Your payment transaction failed</string>
+    <string name="go_home">Back to Home </string>
+    <string name="try_again">Try Again</string>
+
+    <!--Service person document upload-->
+    <string name="service_person_doc_upload">Documentation of Service Expert</string>
+    <string name="back_home">Back to Home</string>
+    <string name="on_upload_success">Thank you! Your documents have been\nuploaded successfully</string>
+
+    <!--Requested service list-->
+    <string name="category">Category</string>
+    <string name="subcategory">Sub Category</string>
+    <string name="date">Select Date</string>
+    <string name="time">Select Time Slot</string>
+    <string name="location">Select Service Location</string>
+    <string name="cancel">Cancel Service</string>
+    <string name="accept">Accept Service</string>
+    <string name="assign">Assign</string>
+
+    <string name="cancel_service_noadvance_alert1">Are you sure you want to cancel your service?</string>
+
+    <string name="alert_button_yes">Yes</string>
+    <string name="alert_button_no">No</string>
+
+
+    <string name="comment">Comment</string>
+
+    <!--Cancel service-->
+    <string name="cancel_title">Cancel Service</string>
+    <string name="cancel_details">Cancellation Details</string>
+    <string name="reason">Reason</string>
+    <string name="reason_hint">Due to non availability</string>
+    <string name="reason_comments">Comments(if any)</string>
+    <string name="reason_comments_hint">I will book the service once i am available</string>
+    <string name="service_number">Service Number</string>
+    <string name="service_number_hint">Service Number Hint</string>
+    <string name="cancelled_by">Cancelled By</string>
+    <string name="cancelled_by_hint">Cancelled By Hint</string>
+
+    <!--Assigned service-->
+    <string name="customer_name">Customer Name</string>
+    <string name="customer_name_text">Customer Name Text</string>
+    <string name="customer_number">Customer Number</string>
+    <string name="customer_number_text">Customer Number Text</string>
+    <string name="service_time">Service Time</string>
+    <string name="service_time_text">Service Time Text</string>
+    <string name="service_cost">Estimated Cost</string>
+    <string name="service_cost_text">Estimated Cost Text</string>
+
+
+    <!--Rating Page-->
+    <string name="rating_title">Rate Service</string>
+    <string name="rating_text">Rate your service</string>
+    <string name="rate">Rate</string>
+
+    <!--Landing page-->
+    <string name="home">Home</string>
+    <string name="service_expert">Service Expert</string>
+    <string name="profile_title">Profile</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="about_us">About Us</string>
+    <string name="track">Track</string>
+
+    <string name="sp_category">Electrical</string>
+    <string name="sp_sub_category">Generator</string>
+    <string name="sp_customer_name">Customer Name</string>
+    <string name="sp_customer_name_hint">Customer Name</string>
+    <string name="sp_service_date">Service Date</string>
+    <string name="sp_service_date_hint">Service Date</string>
+    <string name="sp_service_time">Service Time</string>
+    <string name="sp_service_time_hint">Service Time</string>
+    <string name="sp_service_provider">Service Provider</string>
+    <string name="sp_service_provider_hint">Service Provider</string>
+    <string name="sp_enter_otp">Enter OTP to start the work</string>
+    <string name="sp_enter_otp_hint">Enter OTP</string>
+    <string name="request_otp">Request OTP</string>
+    <string name="start">Start</string>
+    <string name="start_date_time">Date and time at which the service started:</string>
+    <string name="additional_services">Additional Services</string>
+    <string name="submit">Submit</string>
+    <string name="material_used">Material used</string>
+    <string name="attach_bill">Attach bill</string>
+
+    <string name="date_selected">Selected Date</string>
+    <string name="time_selected">Requested Time Slot</string>
+    <string name="service_provider">Service Associate</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="coupon_applied">Coupon Applied</string>
+    <string name="coupon">Coupon</string>
+    <string name="select_coupon">Select Coupon</string>
+    <string name="apply_coupon">Apply</string>
+    <string name="grand_total_pay">Grand Total</string>
+    <string name="service_person">Service Expert</string>
+    <string name="share_invoice">Share Invoice</string>
+    <string name="view_bill">View Bill</string>
+    <string name="payment">Payment</string>
+    <string name="service_charge">Service charge</string>
+    <string name="additional_charge">Additional charge</string>
+    <string name="grand_total">Total Service Cost</string>
+    <string name="view_summary">View Summary</string>
+    <string name="service_summary">Service Summary</string>
+    <string name="clear">Clear All</string>
+    <string name="pay_button">Pay</string>
+
+    <string name="GPSAlertDialogTitle">Enable GPS</string>
+    <string name="GPSAlertDialogMessage">Enable GPS</string>
+
+    <!--General-->
+    <string name="confirm">Confirm</string>
+    <string name="progress_loading">Loading&#8230;</string>
+    <string name="error_entry">Entry Invalid</string>
+    <string name="error_mail">Enter vaild mail ID</string>
+    <string name="error_number">Enter vaild phone number</string>
+    <string name="empty_entry">Field cannot be empty</string>
+    <string name="empty_spinner">Select some value </string>
+
+    <!--Home fragment-->
+    <string name="requested_ser">Requested Services</string>
+    <string name="assigned">Assigned Services</string>
+    <string name="ongoing">On going Services</string>
+    <string name="completed">Completed Services</string>
+    <string name="cancelled">Cancelled Services</string>
+    <string name="transaction">Transaction Details</string>
+
+    <!--Service person fragment-->
+    <string name="application_status">Service Expert Application Status</string>
+
+    <!--Service person creation-->
+    <string name="service_person_title">Service Person Creation</string>
+    <string name="service_person_detail_info_title">Service Expert Details</string>
+    <string name="service_person_document_title">Service Expert Documentation</string>
+    <string name="update">Update</string>
+    <string name="serv_pers_full_name">Full name</string>
+    <string name="gender">Gender</string>
+    <string name="dob">DOB</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="pincode">PIN</string>
+    <string name="state">State</string>
+    <string name="language_known">Language known</string>
+    <string name="edu_qulifiy">Education qualification</string>
+
+    <string-array name="gender_array">
+        <item>Select gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Others</item>
+    </string-array>
+
+    <!--Requested Services-->
+    <string name="requested_title">Requested Services</string>
+
+    <!--Assigned Services-->
+    <string name="assigned_title">Assigned Services</string>
+
+    <!--OnGoing Services-->
+    <string name="ongoing_title">Ongoing Services</string>
+
+    <!--Completed Services-->
+    <string name="completed_title">Completed Services</string>
+
+    <!--Cancelled Services-->
+    <string name="cancelled_title">Cancelled Services</string>
+
+    <!--Transaction Details-->
+    <string name="transaction_details_title">Transaction Details</string>
+
+
+    <!--Side menu-->
+    <string name="text_tamil" translatable="false">தமிழ்</string>
+    <string name="text_english" translatable="false">English</string>
+
+    <string-array name="language_selection">
+        <item>Select</item>
+        <item>தமிழ்</item>
+        <item>English</item>
+    </string-array>
+
+    <!--Dialog Fragment-->
+    <string name="alert_button_ok">OK</string>
+    <string name="alert_button_cancel">Cancel</string>
+
+    <!--Profile Settings Page-->
+
+    <string name="about">About</string>
+    <string name="share">Share app</string>
+    <string name="logout">Logout</string>
+    <string name="update_service">Update Services</string>
+    <string name="bank_details">Edit Bank Details</string>
+    <string name="company_details">Company Details</string>
+
+    <string name="user_name">Name</string>
+    <string name="user_address">Address</string>
+    <string name="user_mail">E-Mail</string>
+    <string name="user_gender">Gender</string>
+    <string name="select_user_gender">Select Gender</string>
+
+
+    <string name="mobile_number">Mobile Number</string>
+
+    <string name="google_android_map_api_key">AIzaSyD428E0W4-pf4kJuJ3rsqG5vCELRgmR2ok</string>
+
+    <!--About Us Page-->
+    <string name="about_content">SkilEx is an emerging Indian start up that aims to build a scalable business model which serves as a platform connecting people, who are in need of local and personal services, with service associates. When there is need of service there is always a void in reaching to service experts at any given time. SkilEx comes into this scene of desperation to help consumers get the required service done at the right time. One can access a range of local services like refurbishment, renovation, restoration etc.; and personal services like fitness training, massages, physiotherapy, counselling, etc., via SkilEx and get things done in a convenient and affordable way.
+\n\nInitially aimed at launching in major cities of South India, SkilEx’s vision is to expand its base across the country including all the cities, building a bond between the service associates and their customers.
+</string>
+
+</resources>
