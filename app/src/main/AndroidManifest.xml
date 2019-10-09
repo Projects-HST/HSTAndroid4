@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.skilex.serviceprovider">
+    package="com.hst.vendor">
 
     <!-- Adding Internet Permission -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -20,7 +20,7 @@
 
 
     <permission
-        android:name="com.skilex.serviceprovider.permission.MAPS_RECEIVE"
+        android:name="com.hst.vendor.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
     <uses-permission android:name="com.skilex.serviceprovider.permission.MAPS_RECEIVE" />
 
@@ -33,7 +33,7 @@
         android:required="false" />
 
     <application
-        android:name=".app.AppController"
+        android:name="com.hst.vendor.app.AppController"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
@@ -42,7 +42,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppThemeNoActionBarLogin">
 
-        <activity android:name=".activity.loginmodule.SplashScreenActivity">
+        <activity android:name="com.hst.vendor.activity.loginmodule.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -51,244 +51,244 @@
         </activity>
 
         <activity
-            android:name=".activity.loginmodule.LoginActivity"
+            android:name="com.hst.vendor.activity.loginmodule.LoginActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeNoActionBarLogin"
             android:windowSoftInputMode="stateHidden">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".activity.loginmodule.LoginActivity" />
+                android:value="com.hst.vendor.activity.loginmodule.LoginActivity" />
         </activity>
 
         <activity
-            android:name=".activity.loginmodule.RegisterActivity"
+            android:name="com.hst.vendor.activity.loginmodule.RegisterActivity"
             android:label="@string/reg_action_bar"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.loginmodule.OTPVerificationActivity"
+            android:name="com.hst.vendor.activity.loginmodule.OTPVerificationActivity"
             android:label="@string/otp_action_bar"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.providerregistration.CategorySelectionActivity"
+            android:name="com.hst.vendor.activity.providerregistration.CategorySelectionActivity"
             android:label="@string/category_action_bar"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.providerregistration.OrganizationTypeSelectionActivity"
+            android:name="com.hst.vendor.activity.providerregistration.OrganizationTypeSelectionActivity"
             android:label="@string/org_type_action_bar"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.providerregistration.RegisteredOrganizationInfoActivity"
+            android:name="com.hst.vendor.activity.providerregistration.RegisteredOrganizationInfoActivity"
             android:label="@string/reg_org_action_bar"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.providerregistration.RegOrgDocumentUploadActivity"
+            android:name="com.hst.vendor.activity.providerregistration.RegOrgDocumentUploadActivity"
             android:label="@string/reg_doc_upload_action_bar"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.providerregistration.UnRegisteredOrganizationInfoActivity"
+            android:name="com.hst.vendor.activity.providerregistration.UnRegisteredOrganizationInfoActivity"
             android:label="@string/un_reg_org_action_bar"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.providerregistration.UnRegOrgDocumentUploadActivity"
+            android:name="com.hst.vendor.activity.providerregistration.UnRegOrgDocumentUploadActivity"
             android:label="@string/un_reg_doc_upload_action_bar"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.providerregistration.InitialDepositActivity"
+            android:name="com.hst.vendor.activity.providerregistration.InitialDepositActivity"
             android:label="@string/initial_deposit_action_bar"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.providerregistration.DocumentVerificationStatusActivity"
+            android:name="com.hst.vendor.activity.providerregistration.DocumentVerificationStatusActivity"
             android:label="@string/initial_deposit_action_bar"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.providerregistration.DocumentVerifySuccessActivity"
+            android:name="com.hst.vendor.activity.providerregistration.DocumentVerifySuccessActivity"
             android:label="@string/service_person_document_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.providerregistration.WelcomeActivity"
+            android:name="com.hst.vendor.activity.providerregistration.WelcomeActivity"
             android:label="@string/service_person_document_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppThemeNoActionBarLogin"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.fragmentactivity.requested.RequestedServicesActivity"
+            android:name="com.hst.vendor.activity.fragmentactivity.requested.RequestedServicesActivity"
             android:label="@string/requested_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.fragmentactivity.requested.RequestedServiceDetailActivity"
+            android:name="com.hst.vendor.activity.fragmentactivity.requested.RequestedServiceDetailActivity"
             android:label="@string/requested_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.fragmentactivity.cancelled.CancelRequestedServiceActivity"
+            android:name="com.hst.vendor.activity.fragmentactivity.cancelled.CancelRequestedServiceActivity"
             android:label="@string/cancel_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.fragmentactivity.assigned.AssignedServicesActivity"
+            android:name="com.hst.vendor.activity.fragmentactivity.assigned.AssignedServicesActivity"
             android:label="@string/assigned_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.fragmentactivity.assigned.AssignedServiceDetailActivity"
+            android:name="com.hst.vendor.activity.fragmentactivity.assigned.AssignedServiceDetailActivity"
             android:label="@string/assigned_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.fragmentactivity.ongoing.OnGoingServicesActivity"
+            android:name="com.hst.vendor.activity.fragmentactivity.ongoing.OnGoingServicesActivity"
             android:label="@string/ongoing_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.fragmentactivity.completed.CompletedServicesActivity"
+            android:name="com.hst.vendor.activity.fragmentactivity.completed.CompletedServicesActivity"
             android:label="@string/completed_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.fragmentactivity.cancelled.CancelledServicesActivity"
+            android:name="com.hst.vendor.activity.fragmentactivity.cancelled.CancelledServicesActivity"
             android:label="@string/cancelled_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.fragmentactivity.cancelled.CancelledServiceDetailActivity"
+            android:name="com.hst.vendor.activity.fragmentactivity.cancelled.CancelledServiceDetailActivity"
             android:label="@string/cancelled_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.fragmentactivity.transaction.TransactionDetailsActivity"
+            android:name="com.hst.vendor.activity.fragmentactivity.transaction.TransactionDetailsActivity"
             android:label="@string/transaction_details_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.serviceperson.ServicePersonCreationActivity"
+            android:name="com.hst.vendor.activity.serviceperson.ServicePersonCreationActivity"
             android:label="@string/service_person_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.serviceperson.ServicePersonDetailInfoActivity"
+            android:name="com.hst.vendor.activity.serviceperson.ServicePersonDetailInfoActivity"
             android:label="@string/service_person_detail_info_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.serviceperson.ServicePersonDocumentUploadActivity"
+            android:name="com.hst.vendor.activity.serviceperson.ServicePersonDocumentUploadActivity"
             android:label="@string/service_person_document_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.serviceperson.DocUploadOnSuccessActivity"
+            android:name="com.hst.vendor.activity.serviceperson.DocUploadOnSuccessActivity"
             android:label="@string/service_person_document_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
-        <activity android:name=".ccavenue.activity.InitialScreenActivity" />
-        <activity android:name=".ccavenue.activity.StatusActivity" />
-        <activity android:name=".ccavenue.activity.WebViewActivity" />
+        <activity android:name="com.hst.vendor.ccavenue.activity.InitialScreenActivity" />
+        <activity android:name="com.hst.vendor.ccavenue.activity.StatusActivity" />
+        <activity android:name="com.hst.vendor.ccavenue.activity.WebViewActivity" />
 
         <activity
-            android:name=".activity.LandingPageActivity"
+            android:name="com.hst.vendor.activity.LandingPageActivity"
             android:label="@string/dashboard"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.loginmodule.AboutUsActivity"
+            android:name="com.hst.vendor.activity.loginmodule.AboutUsActivity"
             android:label="@string/about_us"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.ProfileActivity"
+            android:name="com.hst.vendor.activity.ProfileActivity"
             android:label="@string/completed_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
         <activity
-            android:name=".activity.fragmentactivity.ongoing.InitiatedServiceActivity"
+            android:name="com.hst.vendor.activity.fragmentactivity.ongoing.InitiatedServiceActivity"
             android:label="@string/ongoing_title"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme"
             android:windowSoftInputMode="stateHidden" />
 
 
-        <service android:name=".fcm.MyFirebaseInstanceIDService">
+        <service android:name="com.hst.vendor.fcm.MyFirebaseInstanceIDService">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
 
-        <service android:name=".fcm.MyFirebaseMessagingService">
+        <service android:name="com.hst.vendor.fcm.MyFirebaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
 
-        <service android:name=".activity.loginmodule.GPSTracker" />
+        <service android:name="com.hst.vendor.activity.loginmodule.GPSTracker" />
 
     </application>
 

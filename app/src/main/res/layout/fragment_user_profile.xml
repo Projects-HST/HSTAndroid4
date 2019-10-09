@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:background="@color/white">
 
-        <com.skilex.serviceprovider.customview.CircleImageView
+        <com.hst.vendor.customview.CircleImageView
             android:id="@+id/user_profile_img"
             android:layout_width="100dp"
             android:layout_height="100dp"

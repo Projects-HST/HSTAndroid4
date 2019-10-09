@@ -4,10 +4,10 @@ android {
 
     signingConfigs {
         config {
-            keyAlias 'skilex_provider_alias'
-            keyPassword 'skilex#123'
-            storeFile file('D:\\HappySanzTech\\AppWorkSpace\\ServiceProvider\\app\\skilex_service_provider.jks')
-            storePassword 'skilex#123'
+            keyAlias 'hat_vendor_alias'
+            keyPassword 'vendor#123'
+            storeFile file('D:\\HappySanzTech\\AppWorkSpace\\HSTVendor\\app\\hst_vendor.jks')
+            storePassword 'vendor#123'
             flavorDimensions "default"
         }
     }
@@ -16,7 +16,7 @@ android {
         buildToolsVersion '28.0.3'
 
     defaultConfig {
-        applicationId "com.skilex.serviceprovider"
+        applicationId "com.hst.vendor"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 4

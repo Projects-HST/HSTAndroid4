@@ -24,7 +24,7 @@
                     android:background="@color/colorPrimary"
                     android:gravity="center">
 
-                    <com.skilex.serviceprovider.customview.CircleImageView
+                    <com.hst.vendor.customview.CircleImageView
                         android:id="@+id/img"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
