@@ -47,6 +47,13 @@ public class OrganizationTypeSelectionActivity extends BaseActivity implements V
         llUnRegOrg = findViewById(R.id.ll_un_reg_org);
         llUnRegOrg.setOnClickListener(this);
 
+        selectType();
+
+    }
+
+    void selectType(){
+        organizationType = "Individual";
+        setOrganizationType();
     }
 
     @Override

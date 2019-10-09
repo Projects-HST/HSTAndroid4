@@ -34,7 +34,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_logo_blue" />
+            android:src="@drawable/ic_logo" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -119,6 +119,7 @@
         android:layout_width="match_parent"
         android:layout_height="110dp"
         android:layout_alignParentBottom="true"
+        android:visibility="gone"
         android:background="@drawable/ic_login_bg" />
 
 </RelativeLayout>

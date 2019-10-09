@@ -8,12 +8,12 @@ public class SkilExConstants {
 
     //    URLS
     //    BASE URL
-    private static final String BASE_URL = "https://skilex.in/";
+    private static final String BASE_URL = "https://happysanz.in/";
 
     //BUILD URL
 //    public static final String BUILD_URL = BASE_URL + "development/apisprovider/";
 //    public static final String BUILD_URL = BASE_URL + "uat/apisprovider/";
-    public static final String BUILD_URL = BASE_URL + "apisprovider/";
+    public static final String BUILD_URL = BASE_URL + "tnulm_demo/apivendor/";
 
     //NUMBER VERIFICATION URL FOR LOGIN
     public static final String MOBILE_VERIFICATION = "mobile_check/";

@@ -116,6 +116,8 @@ public class UnRegisteredOrganizationInfoActivity extends BaseActivity implement
 
         btnSubmit = findViewById(R.id.btnSubmit);
         btnSubmit.setOnClickListener(this);
+
+        noOfVendor();
     }
 
     @Override
@@ -126,22 +128,26 @@ public class UnRegisteredOrganizationInfoActivity extends BaseActivity implement
         return true;
     }
 
+    void noOfVendor(){
+        JSONObject jsonObject = new JSONObject();
+        try {
+            jsonObject.put(SkilExConstants.USER_MASTER_ID, PreferenceStorage.getUserMasterId(getApplicationContext()));
+            jsonObject.put(SkilExConstants.KEY_NO_OF_SERVICE_PERSON, noOfServicePersons);
+            jsonObject.put(SkilExConstants.KEY_ALSO_A_SERVICE_PERSON, alsoServicePerson);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        progressDialogHelper.showProgressDialog(getString(R.string.progress_loading));
+        String url = SkilExConstants.BUILD_URL + SkilExConstants.PROVIDER_INDIVIDUAL_DETAILS;
+        serviceHelper.makeGetServiceCall(jsonObject.toString(), url);
+    }
+
     @Override
     public void onClick(View v) {
         if (CommonUtils.haveNetworkConnection(getApplicationContext())) {
             if (v == btnSubmit) {
                 if (validateFields()) {
-                    JSONObject jsonObject = new JSONObject();
-                    try {
-                        jsonObject.put(SkilExConstants.USER_MASTER_ID, PreferenceStorage.getUserMasterId(getApplicationContext()));
-                        jsonObject.put(SkilExConstants.KEY_NO_OF_SERVICE_PERSON, noOfServicePersons);
-                        jsonObject.put(SkilExConstants.KEY_ALSO_A_SERVICE_PERSON, alsoServicePerson);
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                    progressDialogHelper.showProgressDialog(getString(R.string.progress_loading));
-                    String url = SkilExConstants.BUILD_URL + SkilExConstants.PROVIDER_INDIVIDUAL_DETAILS;
-                    serviceHelper.makeGetServiceCall(jsonObject.toString(), url);
+                    noOfVendor();
                 }
             }
         } else {

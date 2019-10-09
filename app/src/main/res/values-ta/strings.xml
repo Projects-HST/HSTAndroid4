@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">ஸ்கில்எக்ஸ்</string>
+    <string name="app_name">Vendor</string>
 
     <string name="empty" />
     <string name="error_occurred">Failed to connect to the server. Please try again.</string>
@@ -117,7 +117,7 @@
     <string name="deposit_title">Refundable Deposit</string>
     <string name="pay">Pay</string>
     <string name="deposit_description">* The amount you deposit will be refunded when you end your agreement with SkilEx or when you manage to have a good service record via SkilEx.</string>
-    <string name="advance_redirect_url">http://skilex.in/development/ccavenue_app/serv_provider_advnace.php</string>
+    <string name="advance_redirect_url">https://happysanz.in/tnulm_demo/ccavenue_app/serv_provider_advance.php</string>
 <!--    <string name="advance_redirect_url">http://skilex.in/development/ccavenue_app/serv_provider_advnace.php</string>-->
 <!--    <string name="advance_redirect_url">http://skilex.in/ccavenue_app/serv_provider_advnace.php</string>-->
     <!--    <string name="advance_redirect_url">https://test.ccavenue.com/transaction/initTrans</string>-->

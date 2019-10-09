@@ -145,7 +145,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="textUri"
-                android:text="https://www.skilex.in/development/ccavenue_app/GetRSA.php" />
+                android:text="https://happysanz.in/tnulm_demo/ccavenue_app/GetRSA.php" />
 <!--            https://test.ccavenue.com/transaction/getRSAKey-->
 <!--            https://www.skilex.in/development/ccavenue_app/GetRSA.php-->
 <!--            https://secure.ccavenue.com/transaction/jsp/GetRSA.jsp-->
